@@ -1,0 +1,13 @@
+    //input
+    int sleep_pd = 8;
+    int death = 80;
+    int current = 22;
+    
+    //output
+    int total_sleep = 0;
+    
+    //formula
+    total_sleep = ((sleep_pd*365)*(death-current))/(365*24);
+    
+    
+    System.out.println("Your total sleepo is: " + total_sleep + " years");
