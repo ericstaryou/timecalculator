@@ -63,3 +63,8 @@ h2{
 .content{
 	margin-top: 80px;
 }
+
+.inputbox{
+	background-color: black;
+	border-color: white;
+}
