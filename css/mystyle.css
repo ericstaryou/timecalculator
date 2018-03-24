@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+}
+
+h1,div {
+    color: white;
+    margin-left: 20px;
+}

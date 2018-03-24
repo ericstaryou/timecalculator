@@ -1,13 +1,20 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="css/layout.css" type="text/css">
+		<link rel="stylesheet" href="css/mystyle.css" type="text/css">
+		<script src="js/myjs.js"></script>
 	</head>
+	<body>
+		<div class="main">
+			Hours of Sleep Per Day: <br>
+			<input id="spd" type="text"> <br><br>
+			Death Age: <br>
+			<input id="da" type="text"><br><br>
+			Current Age: <br>
+			<input id="ca" type="text"><br><br>
 
-	<body style="background-color:black;">
-		<h1 style="color:white;">Hello Vanessa</h1>
+			<button type="button" onclick="calcTotalSleep('spd','da','ca');">Click Me!</button>
 
-		<a href="v2.html">NEXT</a>
-
-		<script type="text/javascript" src="script.js"></script>
+			<div id="s1"></div>
+		</div>
 	</body>
 </html>
