@@ -26,8 +26,7 @@ h2{
     left: 0;
     right: 0;
     margin: auto;*/
-    position: relative;
-    height: 550px;
+    
 }
 
 .landing{
@@ -62,12 +61,20 @@ h2{
 
 .result{
 	text-align: center;
-	font-size: 36pt;
+	font-size: 36pt !important;
 	margin-top: 0px !important;
 }
 
 .content{
 	margin-top: 80px;
+	position: relative;
+    height: 550px;
+}
+
+.content2{
+	margin-top: 200px;
+	position: relative;
+    height: 430px;
 }
 
 .inputbox{
