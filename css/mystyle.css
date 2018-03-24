@@ -1,6 +1,6 @@
 @font-face {
     font-family: lydian;
-    src: url(LYDIAN__.TTF);
+    src: url(../lydian.ttf)format("truetype");
 }
 
 body {
