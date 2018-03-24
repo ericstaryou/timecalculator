@@ -2,7 +2,7 @@ body {
     background-color: black;
 }
 
-h1,div {
+h1,div,a {
     color: white;
     margin-left: 20px;
 }

@@ -22,3 +22,11 @@ function calcTotalSleep(a,b,c) {
   		var s = document.getElementById("s1");
   		s.innerHTML = total_sleep;
 }
+
+function storeSleep(key, value){
+	localStorage.setItem(key, document.getElementById(value).value);
+}
+
+function retrieveSleep(){
+	document.getElementById("r1").innerHTML = localStorage.getItem("sleepPerDay");
+}
