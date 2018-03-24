@@ -1,7 +1,13 @@
+@font-face {
+    font-family: lydian;
+    src: url(LYDIAN__.TTF);
+}
+
 body {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: lydian !important;
 }
 
 .main{
