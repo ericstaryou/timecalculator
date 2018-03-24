@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/mystyle.css" type="text/css">
+		<script src="js/myjs.js"></script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="content">
+				<div class="para">
+					<div>You are spending <span id="totaljh" class="output"></span> years on your job.</div><br>
+					<div>Please move <span id="totaljh2" class="output"></span> steps forward on the path.</div>
+				</div>
+				<div class="nextbutton" onclick="navi('#');">NEXT</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function() {
+				 var currentAge = localStorage.getItem("currentAge");
+				 var retireAge = localStorage.getItem("retireAge");
+				 var jobHours = localStorage.getItem("jobHours");
+
+				 var s = document.getElementById("totaljh");
+				 var s2 = document.getElementById("totaljh2");
+  				 s.innerHTML = calcTotalJobHours(currentAge,retireAge,jobHours);
+  				 s2.innerHTML = calcTotalJobHours(currentAge,retireAge,jobHours);
+			});
+		</script>
+	</body>
+</html>

@@ -16,13 +16,23 @@ function calcTotalSleep(a,b,c) {
         var death = parseInt(b);	
         var sleep_pd = parseInt(c);
 
-        //totol hour of sleep formula
+        //total hour of sleep formula
         var total_sleep = ((sleep_pd*365)*(death-current))/(365*24);
 
-  		// var s = document.getElementById("s1");
-  		// s.innerHTML = total_sleep;
-
   		return Math.round(total_sleep);
+}
+
+function calcTotalJobHours(a,b,c) {
+
+		//input
+        var current = parseInt(a);
+        var retire = parseInt(b);	
+        var jobhours_pd = parseInt(c);
+
+        //total hour of career formula
+        var total_jobhours = ((jobhours_pd*220)*(retire-current))/(365*24);
+
+  		return Math.round(total_jobhours);
 }
 
 function storeToLocal(key, value){
