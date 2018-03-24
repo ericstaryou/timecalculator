@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    width: 980px;
 }
 
 h1,div,a {
@@ -7,6 +8,5 @@ h1,div,a {
 }
 
 .main{
-	margin:auto;
-	max-width: 500px;
+	margin:0 auto;
 }
