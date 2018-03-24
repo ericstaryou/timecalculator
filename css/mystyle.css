@@ -60,6 +60,12 @@ h2{
     text-align: left;
 }
 
+.result{
+	text-align: center;
+	font-size: 24pt;
+	margin-top: 200px;
+}
+
 .content{
 	margin-top: 80px;
 }
