@@ -23,11 +23,11 @@ function calcTotalSleep(a,b,c) {
   		s.innerHTML = total_sleep;
 }
 
-function storeSleep(key, value){
+function storeToLocal(key, value){
 	localStorage.setItem(key, document.getElementById(value).value);
 }
 
-function retrieveSleep(){
+function retrieveFromLocal(key){
 	document.getElementById("r1").innerHTML = localStorage.getItem("sleepPerDay");
 }
 
