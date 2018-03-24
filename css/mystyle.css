@@ -62,8 +62,8 @@ h2{
 
 .result{
 	text-align: center;
-	font-size: 24pt;
-/*	margin-top: 200px;*/
+	font-size: 36pt;
+	margin-top: 0px !important;
 }
 
 .content{
