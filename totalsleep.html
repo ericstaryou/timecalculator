@@ -13,8 +13,8 @@
 		<div class="main">
 			<div class="content">
 				<div class="para">
-					<div>You are spending <span class="output">19</span> years on your sleep.</div><br>
-					<div>Please move <span class="output">19</span> steps forward on the path.</div>
+					<div>You are spending <span id="totalsleep" class="output"></span> years on your sleep.</div><br>
+					<div>Please move <span id="totalsleep2" class="output"></span> steps forward on the path.</div>
 				</div>
 				<div class="nextbutton" onclick="navi('current');">NEXT</div>
 			</div>
@@ -24,10 +24,11 @@
 				 var currentAge = localStorage.getItem("currentAge");
 				 var deathAge = localStorage.getItem("deathAge");
 				 var spd = localStorage.getItem("sleepPerDay");
-				 calcTotalSleep(currentAge,deathAge,spd);
 
-				 var s = document.getElementById("s1");
-  				 s.innerHTML = total_sleep;
+				 var s = document.getElementById("totalsleep");
+				 var s2 = document.getElementById("totalsleep2");
+  				 s.innerHTML = calcTotalSleep(currentAge,deathAge,spd);
+  				 s2.innerHTML = calcTotalSleep(currentAge,deathAge,spd);
 			});
 		</script>
 	</body>
