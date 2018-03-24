@@ -4,5 +4,8 @@ body {
 
 h1,div,a {
     color: white;
-    margin-left: 20px;
+}
+
+.main{
+	text-align: center;
 }
