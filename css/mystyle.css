@@ -70,3 +70,13 @@ h2{
 	font-size: 20pt;
 	width: 130px;
 }
+
+.unit{
+	font-size: 20pt;
+	margin-left: 10px;
+}
+
+.output{
+	font-size: 30pt;
+	color: yellow;
+}

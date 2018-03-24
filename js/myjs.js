@@ -12,15 +12,17 @@ function sum(a,b) {
 function calcTotalSleep(a,b,c) {
 
 		//input
-        var sleep_pd = parseInt(document.getElementById(a).value);
-        var death = parseInt(document.getElementById(b).value);
-        var current = parseInt(document.getElementById(c).value);	
+        var current = parseInt(a);
+        var death = parseInt(b);	
+        var sleep_pd = parseInt(c);
 
         //totol hour of sleep formula
         var total_sleep = ((sleep_pd*365)*(death-current))/(365*24);
 
-  		var s = document.getElementById("s1");
-  		s.innerHTML = total_sleep;
+  		// var s = document.getElementById("s1");
+  		// s.innerHTML = total_sleep;
+
+  		return Math.round(total_sleep);
 }
 
 function storeToLocal(key, value){

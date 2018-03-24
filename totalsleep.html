@@ -11,23 +11,24 @@
 	</head>
 	<body>
 		<div class="main">
-			<div class="landing">
-				<div>
-					<h1>At what age you estimate to end your life?</h1>
-					<input class="inputbox" id="da" type="number">
+			<div class="content">
+				<div class="para">
+					<div>You are spending <span class="output">19</span> years on your sleep.</div><br>
+					<div>Please move <span class="output">19</span> steps forward on the path.</div>
 				</div>
+				<div class="nextbutton" onclick="navi('current');">NEXT</div>
 			</div>
 		</div>
 		<script type="text/javascript">
-			var ca = document.getElementById("da");
+			document.addEventListener("DOMContentLoaded", function() {
+				 var currentAge = localStorage.getItem("currentAge");
+				 var deathAge = localStorage.getItem("deathAge");
+				 var spd = localStorage.getItem("sleepPerDay");
+				 calcTotalSleep(currentAge,deathAge,spd);
 
-			ca.addEventListener("keydown", function(e){
-				if(e.keyCode === 13){
-					storeToLocal("deathAge", "da");
-					navi("sleepperday");
-				}
+				 var s = document.getElementById("s1");
+  				 s.innerHTML = total_sleep;
 			});
-
 		</script>
 	</body>
 </html>

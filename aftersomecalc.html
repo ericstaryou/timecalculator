@@ -13,21 +13,10 @@
 		<div class="main">
 			<div class="landing">
 				<div>
-					<h1>At what age you estimate to end your life?</h1>
-					<input class="inputbox" id="da" type="number">
+					<h1>After some calculation...</h1>
 				</div>
+				<div class="startbutton" onclick="navi('totalsleep');">NEXT</div>
 			</div>
 		</div>
-		<script type="text/javascript">
-			var ca = document.getElementById("da");
-
-			ca.addEventListener("keydown", function(e){
-				if(e.keyCode === 13){
-					storeToLocal("deathAge", "da");
-					navi("sleepperday");
-				}
-			});
-
-		</script>
 	</body>
 </html>
