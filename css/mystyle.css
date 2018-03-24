@@ -8,14 +8,14 @@ h1,div,a {
 }
 
 .main{
-	text-align: center;
+/*	text-align: center;
     position: absolute;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    margin-top: 200pt;
+    margin: auto;*/
+    margin-top: 150px;
 }
 
 .start{
