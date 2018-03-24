@@ -30,3 +30,7 @@ function storeSleep(key, value){
 function retrieveSleep(){
 	document.getElementById("r1").innerHTML = localStorage.getItem("sleepPerDay");
 }
+
+function navi(filename){
+	window.location.href = filename + ".html";
+}

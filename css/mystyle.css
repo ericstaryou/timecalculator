@@ -20,7 +20,7 @@ body {
     margin: auto;*/
 }
 
-.content{
+.landing{
 	margin-top: 200px;
 }
 
@@ -32,4 +32,15 @@ body {
 	margin-left: auto;
 	margin-right:auto;
 	padding: 10px;
+}
+
+.para{
+	margin: 0 auto;
+    max-width: 480px;
+    font-size: 18pt;
+    text-align: left;
+}
+
+.content{
+	margin-top: 150px;
 }
