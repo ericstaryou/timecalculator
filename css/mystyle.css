@@ -8,6 +8,8 @@ body {
     color: white;
     text-align: center;
     font-family: lydian !important;
+	background-image: url("../images/bg-02.svg");
+	background-repeat: no-repeat;
 }
 
 h1{
