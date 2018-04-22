@@ -28,6 +28,10 @@ h4{
 	font-size: 48pt
 }
 
+h5{
+	font-size: 14pt;
+}
+
 .main{
 /*	text-align: center;
     position: absolute;
@@ -56,7 +60,7 @@ h4{
 
 .nextbutton{
 	position: absolute;
-	bottom: 0;
+	bottom: 40px;
 	right: 0;
 	margin-right: 200px;
     margin-top: 100px;
@@ -69,6 +73,16 @@ h4{
     text-align: center;
 }
 
+.warningpara{
+	margin: 0 auto;
+	max-width: 680px;
+	font-size: 24pt;
+	text-align: center;
+	background-color: yellow;
+	color: black;
+	padding: 20px 30px;
+}
+
 .result{
 	text-align: center;
 	font-size: 36pt !important;
@@ -76,7 +90,7 @@ h4{
 }
 
 .content{
-	margin-top: 80px;
+	margin-top: 100px;
 	position: relative;
     height: 550px;
 }
