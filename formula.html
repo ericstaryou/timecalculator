@@ -14,17 +14,17 @@
     <div class="landing">
         <div>
             <h1>FORMULA</h1>
-            <input class="inputbox" id="jh" type="number">
+            <input class="inputbox" id="FM" type="number">
             <span class="unit">hours</span>
         </div>
     </div>
 </div>
 <script type="text/javascript">
-    var jh = document.getElementById("jh");
+    var jh = document.getElementById("FM");
 
     jh.addEventListener("keydown", function(e){
         if(e.keyCode === 13){
-            storeToLocal("jobHours", "jh");
+            //storeToLocal("jobHours", "jh");
             navi("totaljobhours");
         }
     });

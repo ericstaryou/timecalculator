@@ -14,21 +14,26 @@
     <div class="landing">
         <div>
             <h1>How many days per week do you work?</h1>
-            <input class="inputbox" id="jh" type="number">
+            <input class="inputbox" id="jd" type="number">
             <span class="unit">hours</span>
+            <div class="mininextbutton" onclick="navi('formula');">NEXT</div>
         </div>
     </div>
 </div>
+
+<!--
 <script type="text/javascript">
-    var jh = document.getElementById("jh");
+    var jh = document.getElementById("jd");
 
     jh.addEventListener("keydown", function(e){
         if(e.keyCode === 13){
-            storeToLocal("jobHours", "jh");
+            storeToLocal("jobDays", "jd");
             navi("formula");
         }
     });
 
 </script>
+-->
+
 </body>
 </html>

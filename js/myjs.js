@@ -9,11 +9,12 @@ function sum(a,b) {
 		
 }
 
+//obsolete
 function calcTotalSleep(a,b,c) {
 
 		//input
         var current = parseInt(a);
-        var death = parseInt(b);	
+        var death = parseInt(b);
         var sleep_pd = parseInt(c);
 
         //total hour of sleep formula
@@ -45,4 +46,9 @@ function retrieveFromLocal(key){
 
 function navi(filename){
 	window.location.href = filename + ".html";
+}
+
+function nextStore(key, value, filename){
+    storeToLocal(key, value);
+    navi(filename);
 }
