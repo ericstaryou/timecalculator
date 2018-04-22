@@ -23,6 +23,14 @@ function calcTotalSleep(a,b,c) {
   		return Math.round(total_sleep);
 }
 
+function calcRemainingYears(workingYears, totalJobHours){
+    return workingYears - totalJobHours;
+}
+
+function calcWorkingYears(current, retire){
+    return retire - current;
+}
+
 function calcTotalJobHours(a,b,c) {
 
 		//input

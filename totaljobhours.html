@@ -13,8 +13,8 @@
 		<div class="main">
 			<div class="content2">
 				<div class="result">
-					<div>You are spending a total of <span id="totaljh" class="output"></span> years </div>
-					<div>just on your job.</div>
+					<div>You are spending a total of <span id="totaljh" class="output"></span> out of <span id="wy" class="output"></span></div>
+					<div>years just on your job before you retire.</div>
 				</div>
 				<div class="startbutton" onclick="navi('reflection');">NEXT</div>
 			</div>
@@ -25,8 +25,19 @@
 				 var retireAge = localStorage.getItem("retireAge");
 				 var jobHours = localStorage.getItem("jobHours");
 
+				 var totalJobHours = calcTotalJobHours(currentAge,retireAge,jobHours);
 				 var s = document.getElementById("totaljh");
-  				 s.innerHTML = calcTotalJobHours(currentAge,retireAge,jobHours);
+  				 s.innerHTML = totalJobHours;
+
+				 var workingYears = calcWorkingYears(currentAge,retireAge);
+  				 var s2 = document.getElementById("wy");
+  				 s2.innerHTML = workingYears;
+
+  				 // storeToLocal("workingYears", workingYears);
+  				 // storeToLocal("totalJobHours", totalJobHours);
+
+                 localStorage.setItem("workingYears", workingYears);
+                 localStorage.setItem("totalJobHours", totalJobHours);
 			});
 		</script>
 	</body>

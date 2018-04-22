@@ -13,11 +13,23 @@
 		<div class="main">
 			<div class="landing">
 				<div>
+					<h1>You have <span id="ry" class="output"></span> years before you retire.</h1><br>
 					<h1>Have you thought of what you want to do</h1>
 					<h1>and achieve for yourself?</h1>
 				</div>
 				<div class="startbutton" onclick="navi('final');">NEXT</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function() {
+                var workingYears = localStorage.getItem("workingYears");
+                var totalJobHours = localStorage.getItem("totalJobHours");
+
+                var remainingYears = calcRemainingYears(workingYears,totalJobHours);
+                var s = document.getElementById("ry");
+                s.innerHTML = remainingYears;
+
+            });
+		</script>
 	</body>
 </html>
