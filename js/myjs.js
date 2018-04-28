@@ -60,3 +60,16 @@ function nextStore(key, value, filename){
     storeToLocal(key, value);
     navi(filename);
 }
+
+//firebase
+function pushFBase(){
+    var firebaseRef = firebase.database().ref();
+
+    firebaseRef.push().set({
+        currentAge: localStorage.getItem("currentAge"),
+        retireAge: localStorage.getItem("retireAge"),
+        jobHours: localStorage.getItem("jobHours"),
+        workingYears: localStorage.getItem("workingYears"),
+        totalJobHours: localStorage.getItem("totalJobHours")
+    });
+}
