@@ -129,3 +129,16 @@ h5{
 .final{
 	font-size: 48pt;
 }
+
+.f1{
+	border-bottom: solid white;
+}
+
+.f2{
+	margin-top: 20px;
+}
+
+.formula{
+	margin-left: 23%;
+	margin-right: 23%;
+}

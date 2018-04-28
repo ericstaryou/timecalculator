@@ -41,7 +41,7 @@ function calcTotalJobHours(a,b,c) {
         //total hour of career formula
         var total_jobhours = ((jobhours_pd*220)*(retire-current))/(365*24);
 
-  		return Math.round(total_jobhours);
+  		return Math.round(total_jobhours*2);
 }
 
 function storeToLocal(key, value){
